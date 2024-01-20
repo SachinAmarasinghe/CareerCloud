@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,7 +15,7 @@ namespace CareerCloud.Pocos
         [Key]
         public Guid Id { get; set; }
 
-        [Key]
+        [ForeignKey("CompanyProfile")]
         public Guid Company { get; set; }
 
         [Column("Profile_Created")]
@@ -28,5 +29,11 @@ namespace CareerCloud.Pocos
 
         [Column("Time_Stamp")]
         public byte[] TimeStamp { get; set; }
+
+        public virtual CompanyProfilePoco CompanyProfile { get; set; } = null!;
+        public virtual ICollection<CompanyJobEducationPoco>? CompanyJobEducations { get; set; }
+
+        public virtual ICollection<CompanyJobSkillPoco> CompanyJobSkills { get; set; }
+        public virtual ICollection<CompanyJobDescriptionPoco> CompanyJobDescriptions { get; set; }
     }
 }

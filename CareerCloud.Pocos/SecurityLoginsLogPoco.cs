@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -25,5 +26,7 @@ namespace CareerCloud.Pocos
 
         [Column("Is_Succesful")]
         public bool IsSuccesful { get; set; }
+
+        public virtual SecurityLoginPoco SecurityLogin { get; set; } = null!;
     }
 }

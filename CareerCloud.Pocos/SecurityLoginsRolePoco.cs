@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -22,5 +23,8 @@ namespace CareerCloud.Pocos
 
         [Column("Time_Stamp")]
         public byte[]? TimeStamp { get; set; }
+
+        public virtual SecurityLoginPoco SecurityLogin { get; set; } = null!;
+        public virtual SecurityRolePoco SecurityRole { get; set; } = null!;
     }
 }

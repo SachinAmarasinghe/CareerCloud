@@ -20,6 +20,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloud.BusinessLogicLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloudCore.UnitTests.Assignment3", "CareerCloudCore.UnitTests.Assignment3-master\CareerCloudCore.UnitTests.Assignment3.csproj", "{98259F8A-0518-4768-9F81-FA735646FE61}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloud.EntityFrameworkDataAccess", "CareerCloud.EntityFrameworkDataAccess\CareerCloud.EntityFrameworkDataAccess.csproj", "{38DC2C02-EF0D-48A3-A440-B33800E25899}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8C93F87-B105-4CBE-9E9E-A8413D5425DE}"
+	ProjectSection(SolutionItems) = preProject
+		appsettings.json = appsettings.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloudCore.UnitTests.Assignment4", "CareerCloudCore.UnitTests.Assignment4-master\CareerCloudCore.UnitTests.Assignment4.csproj", "{3CDCBD92-A28C-4610-B05F-D5129CDEBB7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloud.WebAPI", "CareerCloud.WebAPI\CareerCloud.WebAPI.csproj", "{FCAC1BD7-7A00-4F2B-A46F-2BC9CD113C6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloudCore.UnitTests.Assignment5", "CareerCloudCore.UnitTests.Assignment5-master\CareerCloudCore.UnitTests.Assignment5.csproj", "{81227DAE-9018-4BF3-BAB6-8C9E45D2CFE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +67,22 @@ Global
 		{98259F8A-0518-4768-9F81-FA735646FE61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98259F8A-0518-4768-9F81-FA735646FE61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98259F8A-0518-4768-9F81-FA735646FE61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38DC2C02-EF0D-48A3-A440-B33800E25899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DC2C02-EF0D-48A3-A440-B33800E25899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DC2C02-EF0D-48A3-A440-B33800E25899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DC2C02-EF0D-48A3-A440-B33800E25899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CDCBD92-A28C-4610-B05F-D5129CDEBB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CDCBD92-A28C-4610-B05F-D5129CDEBB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CDCBD92-A28C-4610-B05F-D5129CDEBB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CDCBD92-A28C-4610-B05F-D5129CDEBB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCAC1BD7-7A00-4F2B-A46F-2BC9CD113C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCAC1BD7-7A00-4F2B-A46F-2BC9CD113C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCAC1BD7-7A00-4F2B-A46F-2BC9CD113C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCAC1BD7-7A00-4F2B-A46F-2BC9CD113C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81227DAE-9018-4BF3-BAB6-8C9E45D2CFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81227DAE-9018-4BF3-BAB6-8C9E45D2CFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81227DAE-9018-4BF3-BAB6-8C9E45D2CFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81227DAE-9018-4BF3-BAB6-8C9E45D2CFE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

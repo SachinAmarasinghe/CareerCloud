@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,23 +15,23 @@ namespace CareerCloud.Pocos
         [Key]
         public Guid Id { get; set; }
 
-        [Key]
+        [ForeignKey("ApplicantProfile")]
         public Guid Applicant { get; set; }
 
         [Column("Company_Name")]
-        public string CompanyName { get; set; }
+        public string? CompanyName { get; set; }
 
-        [Key]
+        [ForeignKey("CountryCode")]
         [Column("Country_Code")]
-        public string CountryCode { get; set; }
+        public string? CountryCode { get; set; }
 
-        public string Location { get; set; }
+        public string? Location { get; set; }
 
         [Column("Job_Title")]
-        public string JobTitle { get; set; }
+        public string? JobTitle { get; set; }
 
         [Column("Job_Description")]
-        public string JobDescription { get; set; }
+        public string? JobDescription { get; set; }
 
         [Column("Start_Month")]
         public short StartMonth { get; set; }
@@ -45,7 +46,10 @@ namespace CareerCloud.Pocos
         public int EndYear { get; set; }
 
         [Column("Time_Stamp")]
-        public byte[] TimeStamp { get; set; }
+        public byte[]? TimeStamp { get; set; }
+
+        public virtual ApplicantProfilePoco ApplicantProfile { get; set; } = null!;
+        public virtual SystemCountryCodePoco SystemCountryCode { get; set; } = null!;
 
     }
 }

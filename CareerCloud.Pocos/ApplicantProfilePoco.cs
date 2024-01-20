@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,7 +15,6 @@ namespace CareerCloud.Pocos
         [Key]
         public Guid Id { get; set; }
 
-        [Key]
         public Guid Login { get; set; }
 
         [Column("Current_Salary")]
@@ -25,9 +25,8 @@ namespace CareerCloud.Pocos
 
         public string? Currency { get; set; }
 
-        [Key]
         [Column("Country_Code")]
-        public string Country { get; set; }
+        public string? Country { get; set; }
 
         [Column("State_Province_Code")]
         public string? Province { get; set; }
@@ -42,6 +41,15 @@ namespace CareerCloud.Pocos
         public string? PostalCode { get; set; }
 
         [Column("Time_Stamp")]
-        public byte[] TimeStamp { get; set; }
+        public byte[]? TimeStamp { get; set; }
+
+        [ForeignKey("Country_Code")]
+        public virtual SystemCountryCodePoco? SystemCountryCode { get; set; }
+        public virtual SecurityLoginPoco Logins { get; set; } = null!;
+        public virtual ICollection<ApplicantEducationPoco>? ApplicantEducations { get; set; }
+        public virtual ICollection<ApplicantJobApplicationPoco>? ApplicantJobApplications { get; set; }
+        public virtual ICollection<ApplicantResumePoco>? ApplicantResumes { get; set; }
+        public virtual ICollection<ApplicantSkillPoco>? ApplicantSkills { get; set; }
+        public virtual ICollection<ApplicantWorkHistoryPoco>? ApplicantWorkHistorys { get; set; }
     }
 }
